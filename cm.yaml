@@ -1,0 +1,7 @@
+kind: ConfigMap
+version: v1
+metadata:
+  name: testing-cm-lj
+data:
+  key: |
+    Ignore me. I'm here to test something.
