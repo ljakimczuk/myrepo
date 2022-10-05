@@ -1,7 +1,8 @@
 kind: ConfigMap
 apiVersion: v1
 metadata:
-  name: testing-cm-lj
+  name: myrepo-configmap
+  namespace: default
 data:
   key: |
     Ignore me. I'm here to test something.
