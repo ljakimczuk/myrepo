@@ -7,7 +7,7 @@ spec:
   decryption:
     provider: sops
     secretRef:
-      name: sops-gpg-master
+      name: sops-gpg-master-ljak
   interval: 1m
   path: ./management-clusters/ginger-ljak
   prune: false
