@@ -1,0 +1,18 @@
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: ginger-ljak-gitops
+  namespace: default
+spec:
+  decryption:
+    provider: sops
+    secretRef:
+      name: sops-gpg-master
+  interval: 1m
+  path: ./management-clusters/ginger-ljak
+  prune: false
+  serviceAccountName: automation
+  sourceRef:
+    kind: GitRepository
+    name: gitops-demo-ljak
+  timeout: 2m

@@ -1,0 +1,4 @@
+creation_rules:
+- encrypted_regex: ^(data|stringData)$
+  path_regex: management-clusters/ginger-ljak/secrets/.*\.enc\.yaml
+  pgp: d97e902f67d3b3a79f025cc11256b8525e9d98d5
